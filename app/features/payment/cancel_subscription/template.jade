@@ -1,0 +1,28 @@
+.modal-dialog.modal-md
+  .modal-content
+    .modal-header.danger
+      button.close(data-dismiss='modal')
+        span Close
+      h4.modal-title
+        span
+          img(src=require('app/images/icon-cross.png'), alt='')
+        client-title
+          | Cancel Subscription
+    .modal-body
+      .row
+        .img.col-xs-12
+          img(src=require('app/images/warning.png'), alt='')
+      .row
+        .description.col-xs-12
+          | Canceling your subscription will disable your GymCloud subscription.
+          br
+          | Are you sure?
+
+    .modal-footer
+      .row
+        .col-xs-12.text-center
+          .back-btn
+            button.btn.btn-primary.button(data-dismiss='modal')
+              | No, I changed my mind!
+            button.btn.btn-danger.button
+              | Confirm

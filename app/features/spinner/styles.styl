@@ -1,0 +1,63 @@
+:local .gc_spinner
+  z-index: 9999
+  position: absolute
+  top: 50%
+  left: 50%
+  height: 43px
+  width: 40px
+
+  .gc_busy_indicator_clock
+    position: relative
+    display: inline-block
+    height: 43px
+    width: 40px
+    background-image: url('../../images/icon-clock-body.png')
+    background-size: cover
+    background-repeat: no-repeat
+
+    &:before
+      content: ''
+      position: relative
+      display: inline-block
+      width: 54px
+      height: 54px
+      margin: -4px 0 0 -7px
+      z-index: -1
+      border-radius: 30px
+      box-shadow: black 0px 0px 8px -3px
+      background-color: white
+
+    .pointer
+      position: absolute
+      left: 0
+      right: 0
+      bottom: 0
+      top: 5px
+      background-image: url('../../images/icon-clock-pointer.png')
+      background-size: 6px 20px
+      background-repeat: no-repeat
+      background-position: center 5px
+
+      &.busy
+        @keyframes :local(rotateHourHand)
+          0%
+            transform rotate(0deg)
+          100%
+            transform rotate(360deg)
+
+        will-change: rotate
+        animation: rotateHourHand 1s infinite linear
+
+    .message
+      display: none
+      width: 90px
+      margin: 0px 0 0 -25px
+      background: #E2F4FC
+      padding: 2px 5px
+      color: #74C8F1
+      text-align: center
+      border-radius: 5px
+      box-shadow: black 0px 0px 8px -3px
+      line-height: 1.4
+      font-size: 12px
+      font-weight: bold

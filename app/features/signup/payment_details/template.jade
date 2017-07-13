@@ -1,0 +1,25 @@
+header.gc-header-standard.gc-header-login
+  .container
+    .col-xs-12.col-sm-6.gc-login-form-wrapper
+      h1
+        img.gc-content-nav-back(src=require('images/prev_btn.png'))
+        span
+          | Payment information
+      form.payment-info(role='form')
+        include ../../../features/payment/add_card/_plan_info.jade
+        include ../../../features/payment/add_card/_fields.jade
+        .form-group.no-padding
+          label
+            | Coupon Code
+          input.form-control.coupon(type="text")
+        .finish-block
+          .lock-img-mock
+          p.secure-payment.no-margin
+            | This is a secure 128-bit SSL
+            br
+            | encrypted payment.
+          .space-filler
+          button.btn.btn-default.no-margin(type="submit")
+            | Next
+
+      region(data-name='add_card')

@@ -1,0 +1,60 @@
+:local .select_form
+  margin: 50px 39px 25px 39px
+  display: flex
+  flex-flow: column
+
+  label
+    padding: 35px
+    display: flex
+    align-items: center
+
+    &:first-child
+      border-bottom: 1px solid #eaeaea
+
+    &.pro,
+    &.client
+      &:before
+        content: ""
+        display: block
+        width: 52px
+        height: 43px
+
+    &.pro:before
+      background: transparent url('../../../images/signup-type-1.png') 17% center no-repeat
+    &.client:before
+      background: transparent url('../../../images/signup-type-3.png') 17% center no-repeat
+
+    .text
+      width: 165px
+      padding-left: 25px
+      font-size: 16px
+      font-weight: 400
+      color: #555555
+
+    input
+      display: none
+
+    .radio_button
+      width: 30px
+      height: 30px
+      margin-left: auto
+      background-color: #cfe3f4
+      border-radius: 50%
+      transition: all 0.5s ease
+
+    input:checked + .radio_button
+      background-color: #0074d9
+
+// iPhone5-6
+@media only screen and (min-device-width : 320px) and (max-device-width : 667px)
+
+  :local .select_form
+    padding: 0
+    margin: 0
+
+    label
+      padding: 35px 0
+
+      .text
+        width: auto
+        padding-left: 10px

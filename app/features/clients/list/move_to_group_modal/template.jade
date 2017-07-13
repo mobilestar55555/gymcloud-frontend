@@ -1,0 +1,17 @@
+.modal-content
+  .modal-header
+    button.close(data-dismiss='modal')
+      span Close
+    h4.modal-title
+      span
+        img(src=require('app/images/icon-individuals.png'), alt='')
+      | Move to Group(s)
+  form.form.gc-move-to-group-form(role='form')
+    .modal-body
+      .row
+        .col-xs-12(class=s.list)
+    .modal-footer
+      .row
+        .col-xs-12.text-right
+          button.btn.btn-primary(type='submit')
+            | Move to Group(s)

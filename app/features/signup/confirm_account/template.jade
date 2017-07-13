@@ -1,0 +1,27 @@
+.container
+  .gc-login-form-wrapper.col-sm-6.cal-xs-12
+    h1.text-center
+      | Account confirmation
+    form.gc-signup-form
+
+      .row(class=s.title)
+        | Follow the link from email to confirm your account.
+
+      .row(class=s.description)
+        | If you don't see email with confirmation instructions, use this form to resend it.
+
+      .form-group.gc-email-form-group
+        label(for="confirm_account_email")
+          | Email
+        input.form-control(
+          type="email"
+          id="confirm_account_email"
+          name="email"
+          placeholder=""
+          autofocus
+          maxlength=256
+        )
+
+      .row(class=s.buttons)
+        .btn.gc-form-submit-button
+          | Resend Instructions

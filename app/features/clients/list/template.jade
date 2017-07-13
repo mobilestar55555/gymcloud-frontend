@@ -1,0 +1,28 @@
+nav.row.gc-nav-wrapper.gc-workspace-nav
+  .col-xs-12
+    label.gc-content-nav-checkall
+      input(type='checkbox')
+    h2.gc-clients-title
+      = title
+    a.btn.btn-link.show-client-form
+      span.fa.fa-plus
+      | Add 
+      span.client-title
+        = clientType
+    .hidden(class=s.controls)
+      if state == 'individuals'
+        a.btn.btn-link.move-to-group-show
+          | Move to group
+      a.remove-item.btn.btn-danger
+        span.fa.fa-trash
+      p
+        span.checked-counter
+        | &nbsp;
+        = clientType
+        | (s)
+.gc-workspace-content
+  .gc-quick-search-wrapper
+    input.gc-exercises-assign-input.gc-auto-complete(type='text', placeholder="Search #{state}")
+  h3(class=s.state)
+    = state
+  ul.gc-clients-list

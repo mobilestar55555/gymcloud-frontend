@@ -1,0 +1,35 @@
+.form-group.no-padding
+  label
+    | Card Number
+  input.form-control.number(type="text")
+
+.expiration-n-security-code
+  .expiration-month.form-group.no-padding
+    label
+      | Expiration Date
+    select.form-control.exp_month
+      option
+        | Month
+      each val in ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12']
+        option= val
+  .divider
+    | /
+  .expiration-year.form-group.no-padding
+    select.form-control.exp_year
+      option
+        | Year
+      each val in _.range(yearFrom, yearTo)
+        option= val
+
+  .space-filler
+  .security-code.form-group.no-padding
+    label
+      | Security code
+    input.form-control.cvc(type="text")
+  .question-in-circle
+    | ?
+
+.form-group.no-padding
+  label
+    | Cardholder name
+  input.form-control.full-name(type="text")

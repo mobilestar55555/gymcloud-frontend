@@ -1,0 +1,8 @@
+div
+  if icon
+    span.icon(class=icon)
+  span.label
+    = folder || ''
+  = name
+  button.clickable.btn.btn-primary.gc-custom(data-id=id)
+    | Duplicate to this folder

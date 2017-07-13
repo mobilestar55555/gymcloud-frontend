@@ -1,0 +1,61 @@
+.gc-dashboard
+  header.gc-dashboard-header
+    h1.title
+      | Dashboard
+    //-span.slogan
+      | “I always felt that my greatest asset was
+      br
+      | not my physical ability, it was my mental ability.”
+      br
+      b
+        | Bruce Jenner
+  .gc-dashboard-content
+    .dashboard-left-side
+      .top-section.clearfix
+        .workout-indicators
+          region(data-name='completion_ring_today')
+          region(data-name='completion_ring_this_week')
+        .workout-amounts
+          .workout-amount
+            span.counter
+            span.counter-text
+              | Workouts scheduled tomorrow
+          .workout-amount
+            span.counter
+            span.counter-progress.positive
+            span.counter-text
+              | Workouts scheduled this week vs. last week
+          button.btn.btn-primary.gc-custom.calendar-button
+            | My Calendar
+      .gc-dashboard-table
+        region(data-name='info_tables')
+    .dashboard-right-side.clearfix
+      .trainer-library.clearfix
+        i.icon
+        .right-side
+          h2.title(
+          data-toggle='tooltip',
+          data-placement='auto',
+          title='Exercises, workouts, and programs can be accessed here or from the menu on the left side of the page. '
+          )
+            | Training Library
+          span.subtitle
+            | Exercises, Workouts &
+            br
+            | Programs
+
+      .ewp-links.clearfix
+        a.exercise-link(href=exercise_link)
+          | List of Exercises
+        a.workout-link(href=workout_link)
+          | List of Workouts
+        a.program-link(href=program_link)
+          | List of Programs
+
+      span.title(
+        data-toggle='tooltip',
+        data-placement='auto',
+        title='This area displays recent activity involving you and your clients'
+      )
+        | Recent Activity:
+      region(data-name='recent_events_notifications')

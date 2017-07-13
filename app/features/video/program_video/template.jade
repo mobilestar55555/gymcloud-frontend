@@ -1,0 +1,24 @@
+ul.gc-content-nav.gc-workout-body-nav
+  li.active
+    a(data-toggle='tab', data-content='description')
+      | description
+  li
+    a(data-toggle='tab', data-content='video')
+      | video
+  li
+    a(data-toggle='tab', data-content='warmup')
+      | warmup
+  li
+    a(data-toggle='tab', data-content='cooldown')
+      | cooldown
+.tab-content.gc-workout-tab-content
+  .tab-pane.active(data-pane='description')
+    region(data-name='editable_textarea')
+  .tab-pane(data-pane='video')
+    .row
+      .col-md-4
+        region(data-name='video_assigned')
+  .tab-pane(data-pane='warmup')
+    region(data-name='warmup')
+  .tab-pane(data-pane='cooldown')
+    region(data-name='cooldown')

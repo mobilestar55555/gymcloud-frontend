@@ -1,0 +1,45 @@
+$grey-color = #a6a7aa
+$blue-color = #257fcc
+
+:local .question
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: stretch
+  height: 300px
+
+  .title
+    font-size: 18px
+    font-weight: 800
+    text-align: center
+    margin: 20px 0 40px 0
+
+  .question_number
+    text-align: center
+    color: $grey-color
+    font-size: 16px
+
+  .form
+    display: flex
+    justify-content: center
+    align-items: center
+
+    label
+      margin: 0 10px
+      cursor: pointer
+
+    input
+      display: none
+
+    .gender_text
+      display: inline-block
+      padding: 10px 40px
+      border: 1px solid $grey-color
+      border-radius: 3px
+      color: black
+      font-size: 15px
+
+    input:checked + .gender_text
+      background: $blue-color
+      border-color: $blue-color
+      color: white

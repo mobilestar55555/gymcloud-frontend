@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_warmup</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="EWP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Warmup-List" transform="translate(-260.000000, -267.000000)" stroke="#3398DB">
+            <g id="ic_warmup" transform="translate(260.000000, 268.000000)">
+                <path d="M5.22576923,14.9258217 C7.91134615,17.5527783 11.0718462,18.7175609 11.0718462,18.7175609 C11.0718462,18.7175609 20.4911538,15.3025174 20.769,6.96977826 L20.7867692,6.60299565 C20.7358846,3.33003913 18.3346154,0.413126087 15.3687692,0.413126087 C13.6540385,0.413126087 12.1428462,1.40525652 11.1477692,2.86164783 C10.1526923,1.40525652 8.6415,0.413126087 6.92676923,0.413126087 C3.96173077,0.413126087 1.56207692,3.2366913 1.51119231,6.50882174 L1.52411538,6.95656087" id="Stroke-1"></path>
+                <polyline id="Stroke-3" points="0.403846154 11.5670348 6.29353846 11.5670348 8.25865385 5.76294783 11.6776154 14.4046435 14.0360769 7.57042609 15.0190385 9.66125217 17.4558462 9.66125217"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

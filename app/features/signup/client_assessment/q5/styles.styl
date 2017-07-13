@@ -1,0 +1,79 @@
+$grey-color = #a6a7aa
+$blue-color = #257fcc
+$text-color = #333333
+
+:local .question
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: stretch
+  height: 310px
+
+  .title
+    font-size: 18px
+    font-weight: 800
+    text-align: center
+    margin: 0 0 20px 0
+
+  .question_number
+    text-align: center
+    color: $grey-color
+    font-size: 16px
+
+  input
+    display: none
+    font-size: 24px
+    color: black
+
+  input[type="text"]
+    display: block
+    height: 50px
+    margin: 5px 40px
+    padding: 0 10px
+    border: none
+    border: 1px solid $grey-color
+    border-radius: 3px
+    color: black
+    font-size: 16px
+
+    &::placeholder
+      color: $text-color
+
+    &:not(:placeholder-shown)
+      border-color: $blue-color
+
+    &[value]
+      border-color: $blue-color
+
+  label.radio
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 50px
+    margin: 5px 40px
+    padding: 0 35px 0 10px
+    font-size: 16px
+    color: $text-color
+    border: 1px solid $grey-color
+    border-radius: 3px
+    position: relative
+    line-height: 17px
+
+    &.checked
+      border-color: $blue-color
+
+    &:has(> input:checked)
+      border-color: $blue-color
+
+    .check
+      display: none
+      width: 27px
+      height: 27px
+      background: url('./../../../../images/check.png') no-repeat
+      position: absolute
+      right: 5px
+      top: 50%;
+      transform: translateY(-50%);
+
+    input:checked + .check
+      display: inline-block

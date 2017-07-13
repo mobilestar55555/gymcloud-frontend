@@ -1,0 +1,13 @@
+div(class=s.question_number)
+  | Question #{question}
+
+div(class=s.title)=title
+
+each option in improveOptions
+  if option.text
+    label(class=s.radio)=option.text
+      input(type='radio', name='improve_option', value=option.id)
+      div(class=s.check)
+  else
+    input(type='text', name='improve', placeholder='Other (Type Here)')
+    input.other(type='radio', name='improve_option', value=option.id)

@@ -1,0 +1,16 @@
+div(class=s.question_number)
+  | Question 4
+
+div(class=s.title)
+  | What fitness equipment do you have access to?
+div(class=s.title)
+  | Select all that apply
+
+each option in equipment
+  label(class=s.checkbox)
+    = option
+    input(type='checkbox', name='equipment[]', value=option)
+    div(class=s.check)
+
+input(type='text', name='other_equipment', placeholder='Other (Type Here)')
+input.other(type='checkbox', name='equipment[]')

@@ -1,0 +1,22 @@
+.row
+  .col-xs-10.gc-program-week-title
+    h2(data-bind="name", contenteditable)
+    span.workouts-count
+  .col-xs-2
+    ul.gc-program-week-actions
+      li
+        button.gc-chevron.expand
+      li
+        button.gc-context-menu-dropdown(data-toggle='dropdown', aria-haspopup='true', role='button', aria-expanded='false')
+        ul.dropdown-menu.gc-dropdown.pull-right(aria-labelledby='gc-program-actions-dropdown', role='menu')
+          li
+            a.gc-menu-item(href='#', data-action='edit_description')
+              | Edit Description
+          li
+            a.gc-menu-item(href='#', data-action='duplicate')
+              | Duplicate this week
+          li.gc-danger
+            a.gc-remove-program-week.gc-menu-item(href='#')
+              | Delete
+
+region(data-name='week_workouts')

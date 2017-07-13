@@ -1,0 +1,33 @@
+.modal-content
+  .modal-header
+    button.close(data-dismiss='modal')
+      span
+        | Close
+    h4.modal-title
+      span
+        img(src=require('app/images/icon-cup-white.png'), alt='')
+      | Add exercise
+  form.form(role='form')
+    .modal-body
+      .form-group
+        label.control-label
+          | Enter name
+        input.form-control(
+          type='text'
+          data-bind='name'
+          maxlength='128',
+          required,
+          autofocus
+        )
+      .form-group
+        .radio
+          label.gc-radio(class=s.main)
+            input(type='radio', name='folder', checked)
+            | Main folder
+            span.gc-radio-clone
+      .form-group(class=s.list)
+    .modal-footer
+      .row
+        .col-xs-12.text-right
+          button.btn.btn-primary.gc-add-personal-best-add(type='submit')
+            | Save

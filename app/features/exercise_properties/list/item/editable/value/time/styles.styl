@@ -1,0 +1,31 @@
+:local .time_input
+  display: flex;
+  flex-direction: row
+  flex-wrap: nowrap
+  justify-content: space-between
+  align-items: stretch
+  max-width: 35px
+
+  .time_part
+    padding: 0
+    max-width: 15px
+    border: none
+    text-align: center
+    -moz-appearance:textfield
+    color: black
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button
+      display: inline-block
+      margin: 0
+      flex: 0 0 auto
+      align-self: stretch
+      cursor: default
+      opacity: 0
+      pointer-events: none
+      -webkit-appearance: none
+      -webkit-user-select: none
+      -webkit-user-modify: read-only
+
+    &:last-child
+      margin-right: 10px

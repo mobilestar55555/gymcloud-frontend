@@ -1,0 +1,121 @@
+.container
+  .gc-login-form-wrapper.col-sm-6.cal-xs-12
+    h1
+      img.gc-content-nav-back(src=require('images/prev_btn.png'))
+      span
+        | Select Training Plan
+    form.gc-signup-form(role='form')
+
+      .form-group(class=s.form_group)
+        label
+          input(type='radio', name='plan_id', value='fitness_assessment')
+          div(class=s.plan)
+            div(class=s.name)
+              | Fitness Assessment
+            ul(class=s.features)
+              li
+                i.fa.fa-check-circle-o
+                | Analysis of current lifestyle and fitness level
+              li
+                i.fa.fa-check-circle-o
+                | Goal setting
+              li
+                i.fa.fa-check-circle-o
+                | Movement quality screening
+              li
+                i.fa.fa-check-circle-o
+                | General fitness guidelines
+          div(class=s.checkmark)
+            div(class=s.price)
+              | $59
+            div(class=s.radio_button)
+
+        label
+          input(type='radio', name='plan_id', value='custom_programming')
+          div(class=s.plan)
+            div(class=s.name)
+              | Custom Programming
+            ul(class=s.features)
+              li
+                i.fa.fa-check-circle-o
+                | Fitness Assessment
+              li
+                i.fa.fa-check-circle-o
+                | Unlimited access to the GymCloud Fitness Coaching Platform
+              li
+                i.fa.fa-check-circle-o
+                | Personalized workout program based on your fitness goals
+              li
+                i.fa.fa-check-circle-o
+                | Nutritional guidelines to streamline your success
+              li
+                i.fa.fa-check-circle-o
+                | Mid-month and End-of-month progress review
+          div(class=s.checkmark)
+            div(class=s.price)
+              | $99
+            div(class=s.radio_button)
+
+        label
+          input(type='radio', name='plan_id', value='personal_coaching')
+          div(class=s.plan)
+            div(class=s.name)
+              | Personal Coaching
+              div(class=s.popular)
+                | MOST POPULAR
+            ul(class=s.features)
+              li
+                i.fa.fa-check-circle-o
+                | Fitness Assessment
+              li
+                i.fa.fa-check-circle-o
+                | Personalized workout program based on your fitness goals
+              li
+                i.fa.fa-check-circle-o
+                | Unlimited access to the GymCloud Fitness Coaching Platform
+              li
+                i.fa.fa-check-circle-o
+                | Nutritional guidelines to streamline your success
+              li
+                i.fa.fa-check-circle-o
+                | Live 30 minute fitness goals assessment
+              li
+                i.fa.fa-check-circle-o
+                | Live 15 minute weekly check-in and progress review
+          div(class=s.checkmark)
+            div(class="#{s.price} #{s.popular}")
+              | $199
+            div(class=s.radio_button)
+
+        label
+          input(type='radio', name='plan_id', value='1_on_1_live_virtual_coaching')
+          div(class=s.plan)
+            div(class=s.name)
+              | 1-on-1 Live Virtual Coaching
+            ul(class=s.features)
+              li
+                  i.fa.fa-check-circle-o
+                  | Fitness Assessment
+              li
+                  i.fa.fa-check-circle-o
+                  | Personalized workout program based on your fitness goals
+              li
+                  i.fa.fa-check-circle-o
+                  | Unlimited access to the GymCloud Fitness Coaching Platform
+              li
+                  i.fa.fa-check-circle-o
+                  | Nutritional guidelines to streamline your success
+              li
+                  i.fa.fa-check-circle-o
+                  | Live 30 minute fitness goals assessment
+              li
+                  i.fa.fa-check-circle-o
+                  | Live 45 minute weekly video training sessions with your fitness professional
+          div(class=s.checkmark)
+            div(class=s.price)
+              | $299
+            div(class=s.radio_button)
+
+      .row.text-center(class=s.buttons)
+        button.btn.btn-default.disabled(type='submit')
+          | Next

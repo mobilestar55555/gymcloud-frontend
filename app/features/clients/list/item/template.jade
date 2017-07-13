@@ -1,0 +1,10 @@
+.col-xs-8
+  label.gc-clients-list-client-chb
+    input(data-id=id, type='checkbox')
+  div(class=s.avatar)
+  a.gc-clients-list-client-link
+.col-xs-4.text-right.gc-clients-list-client-actions
+  if state == 'individuals'
+    a.gc-clients-list-client-move.btn.btn-link
+      | Move to group
+  a.gc-clients-list-client-delete.btn.btn-danger(data-id=id)

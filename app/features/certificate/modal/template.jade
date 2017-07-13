@@ -1,0 +1,23 @@
+.modal-dialog.modal-md
+  .modal-content
+    .modal-header
+      button.close(data-dismiss='modal')
+        span Close
+      h4.modal-title
+        span
+          img(src=require('app/images/ic-cert.svg'), alt='')
+        client-title
+          | Upload Personal Training Certification
+    .modal-body
+      .row
+        .col-xs-12
+          region(data-name='certificate_upload')
+    .modal-footer
+      .row
+        .col-xs-12.text-center
+          .back-btn
+            button.btn.btn-primary.button(data-dismiss='modal')
+              | Back to homepage
+          .finish-btn
+            button.btn.btn-primary.button(data-dismiss='modal')
+              | OK

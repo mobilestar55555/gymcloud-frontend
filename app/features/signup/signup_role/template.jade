@@ -1,0 +1,26 @@
+header.gc-header-standard.gc-header-login
+  .container
+    .gc-login-form-wrapper.col-sm-6.cal-xs-12
+      h1.text-center
+        | Select GymCloud Account Type
+      form.gc-signup-form(role='form')
+
+        .form-group(class=s.select_form)
+          label(class=s.pro)
+            div(class=s.text)
+              | I'm a
+              br
+              | Fitness Professional
+            input(type='radio', name='client_reg_type', value='pro', checked=true)
+            div(class=s.radio_button)
+          label(class=s.client)
+            div(class=s.text)
+              | I'm a
+              br
+              | Client
+            input(type='radio', name='client_reg_type', value='')
+            div(class=s.radio_button)
+        .row.form-group.text-center
+            button.btn.btn-default(type='submit')
+              | Next
+      include ../_footer_login.jade

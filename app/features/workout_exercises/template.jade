@@ -1,0 +1,32 @@
+.row.blue-header
+  .title
+    span.type
+      | Warmup -
+    span.name(contenteditable='true')
+
+  .gc-nested-workout-actions
+    a.gc-context-menu-dropdown(
+      data-toggle='dropdown'
+      aria-haspopup='true'
+      aria-expanded='true'
+      role='button'
+      id="warmup_#{id}"
+    )
+      i.gc-dropdown-menu-icon
+    ul.dropdown-menu.gc-dropdown.pull-right(aria-labelledby="warmup_#{id}", role='menu')
+      li
+        a(href='#', data-action='save_warmup_in_library')
+          | Save Warmup To Library
+      li
+        a(href='#', data-action='remove_warmup_from_workout')
+          | Remove Warmup From Workout
+      li
+        a(href='#', data-action='save_cooldown_in_library')
+          | Save Cooldown To Library
+      li
+        a(href='#', data-action='remove_cooldown_from_workout')
+          | Remove Cooldown From Workout
+
+.row
+  region(data-name='workout_exercises_list')
+region(data-name='workout_exercises_actions')

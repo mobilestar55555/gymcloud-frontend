@@ -1,0 +1,18 @@
+.container
+  .gc-login-form-wrapper.col-sm-6.cal-xs-12
+    h1
+      img.gc-content-nav-back(src=require('images/prev_btn.png'))
+      span
+        | Client Assessment
+    form.gc-signup-form
+
+      .row
+        region(data-name="assessment_step")
+
+      .row(class=s.buttons)
+        div(class=s.assessment_progress)
+          .description
+          progress(max=7, value=1)
+
+        .btn.gc-btn-primary-outline(class=s.next)
+          | Next

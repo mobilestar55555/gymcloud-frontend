@@ -1,0 +1,95 @@
+:local .root
+  .form_group
+    display: flex
+    flex-flow: column
+
+    label
+      padding: 15px 0
+      display: flex
+      justify-content: space-between
+      border-bottom: 1px solid #eaeaea
+
+      .name,
+      .price
+        font-size: 18px
+        color: #0074d9
+        font-weight: 700
+        text-transform: uppercase
+
+      .plan
+        align-self: center
+
+        .name
+          display: flex
+          align-items: center
+
+          .popular
+            display: inline-block
+            margin-left: 10px
+            padding: 4px 10px
+            border-radius: 6px
+            font-size: 11px
+            text-decoration: none
+            text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3)
+            color: #FFFFFF
+            white-space: nowrap
+            cursor: default
+
+            &,
+            &:hover,
+            &:active
+              background-color: #F39E2E
+              background-image: linear-gradient(to top, #F39E2E, #E66214)
+
+        ul.features
+          display: none
+          list-style: none
+          margin-top: 15px
+          padding: 0
+
+          li
+            margin-top: 5px
+
+            i
+              margin-right: 5px
+
+      .checkmark
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: flex-start
+
+        .price
+          margin: 0 0 15px 0
+          flex-grow: 0.5
+
+          &.popular
+            color: #f63300
+
+        .radio_button
+          width: 25px
+          height: 25px
+          margin-left: auto
+          background-color: #cfe3f4
+          border-radius: 50%
+          transition: all 0.5s ease
+
+      input
+        display: none
+
+
+      input:checked + .plan
+        ul
+          display: block
+
+      input:checked ~ .checkmark
+        .radio_button
+          background-color: #0074d9
+
+  .buttons
+    display: flex
+    justify-content: flex-end
+
+    button[type='submit']
+      width: 130px
+      margin: 10px 25px

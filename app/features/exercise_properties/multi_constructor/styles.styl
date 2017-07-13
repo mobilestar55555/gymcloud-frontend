@@ -1,0 +1,44 @@
+:local .gc_workout_exercise_property_constructor
+  display: flex
+  justify-content: flex-end
+  align-items: center
+
+  a.gc_add_property_button
+    cursor: pointer
+
+  .gc_assign_property
+    margin: 0 10px
+
+  .gc_workout_exercise_property_list
+    margin: 0
+    padding: 0
+
+    > li
+      display: inline
+      margin-right 7px
+
+      :global .btn-group > .btn
+        float: none
+
+    :global .gc-property
+      margin: 0!important
+
+      :global .gc-properties-select_box .dropdown-toggle
+        border-radius: 0
+        border-right: none
+
+    :global .gc-selected-property
+      padding 0 8px 0 0
+
+  .gc_constructor_empty_state
+    color: #ccc
+    size: 14px
+    margin: 0 10px
+
+:global .gc-gear-wrapper
+  display: inline-block
+
+:global span.gc-property-value
+  min-width: 16px
+  display: inline-block
+  outline none

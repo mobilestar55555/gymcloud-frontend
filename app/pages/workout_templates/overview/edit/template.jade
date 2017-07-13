@@ -1,0 +1,34 @@
+.row.gc-nav-wrapper
+  .col-md-12.text-sm-right
+    a.btn.save
+      | Save
+
+.row.row-margin-v
+  .col-lg-8.col-lg-offset-2.col-sm-10.col-sm-offset-1.col-xs-12.workout-name
+    span.name-label
+      | Workout Name
+    input
+
+.row.row-margin-v
+  .col-lg-8.col-lg-offset-2.col-sm-10.col-sm-offset-1.col-xs-12
+    region(data-name='video_assigned')
+
+.row.row-margin-v
+  .col-lg-8.col-lg-offset-2.col-sm-10.col-sm-offset-1.col-xs-12.workout-description
+    span.description-label
+      | Workout Description
+    textarea
+      = description
+
+
+.row.row-margin-v
+  .col-lg-8.col-lg-offset-2.col-sm-10.col-sm-offset-1.col-xs-12
+    region(data-name='workout_exercises')
+
+.row.row-margin-v
+  .col-md-12.text-right
+    region(data-name='delete_button')
+
+.row
+  .col-md-12.text-right
+    region(data-name='privacy_toggle2')

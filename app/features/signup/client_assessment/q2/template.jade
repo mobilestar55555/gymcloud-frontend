@@ -1,0 +1,32 @@
+div(class=s.question_number)
+  | Question 2
+
+div(class=s.title)
+  | When were you born?
+
+div(class=s.date_picker)
+  input(type='text', name='birthday')
+
+div(class=s.title)
+  | Your measurements
+
+div(class=s.measurements)
+
+  label
+    div(class=s.label_text)
+      | Height
+    input(type='number', name='height_feet', min=0, max=7, maxlength=1)
+    span
+      | '
+
+  label
+    input(type='number', name='height_inches', min=0, max=12, maxlength=2)
+    span
+      | "
+
+  label
+    div(class=s.label_text)
+      | Weight
+    input(type='number', name='weight', min=100, max=999, maxlength=3)
+    span
+      | lbs

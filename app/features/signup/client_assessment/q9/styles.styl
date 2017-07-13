@@ -1,0 +1,36 @@
+$grey-color = #a6a7aa
+$blue-color = #257fcc
+$blue-color-hover = #3a99d8
+$text-color = #333333
+
+:local .question
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  min-height: 200px
+
+  .title
+    font-size: 18px
+    font-weight: 800
+    text-align: center
+    margin: 20px 20px 40px
+
+  .download_links
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 30px
+
+    a
+      display: flex
+      margin: 10px
+      background-color: $blue-color
+      border-radius: 5px
+
+      :hover
+        background-color: $blue-color-hover
+        border-radius: 5px
+
+    svg
+      width: 100%
